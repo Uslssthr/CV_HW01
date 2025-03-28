@@ -41,8 +41,8 @@ dataset = load_dataset('zimhe/pseudo-floor-plan-12k')
 # 创建数据集实例
 full_train_dataset = FloorPlanDataset(dataset['train'], transform=transform)
 
-# 选择前300个样本
-subset_indices = list(range(300))  # 选择前300个样本
+# 选择前400个样本
+subset_indices = list(range(400))  # 选择前400个样本
 train_dataset = Subset(full_train_dataset, subset_indices)
 
 train_loader = DataLoader(train_dataset, batch_size=4, shuffle=True)

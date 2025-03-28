@@ -15,7 +15,7 @@ criterion = nn.MSELoss()  # 使用均方误差损失函数
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 # 训练模型
-num_epochs = 20
+num_epochs = 50
 for epoch in range(num_epochs):
     print(f'Epoch [{epoch+1}/{num_epochs}] beginning')
     model.train()
